@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <style>
-    img {
-      border-radius: 200px;
-      display: block;
-      margin: auto;
+    .profile {
+      border-radius: 50%;
+      display: inline;
     }
     .pinfo {
       font-family: fantasy;
+    }
+    .smedia {
+      width: 50px;
     }
     body {
       background-color: #D6F6DD;
@@ -18,16 +20,17 @@
     <title class="name">Vitor Martins Diorio</title>
   </head>
   <body>
-   
-    <h1 style="text-align: center;" class="pinfo">Vitor Martins Diorio</h1>
-    <img src="https://scontent-gru1-2.xx.fbcdn.net/v/t1.6435-9/135854456_3915229745196472_2838909640067091478_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_eui2=AeFY7SSpHIFUTn4TUw4RBE7ctihjU6clzEC2KGNTpyXMQA2qqNj09-Sdkd_eYVIkSp2fNoac7QdCoJ1l8n0eDxZr&_nc_ohc=eewN_deHQnQAX848NOQ&_nc_ht=scontent-gru1-2.xx&oh=d7a6e3cf216e8a192ebe5da6ed7b2003&oe=60FDE1F8" alt="Vitor caminhando na praia com uma baita cara de sério pois ele não sabe tirar foto" width="400">
-    <h3>Índice</h3>
-    <ul>
-      <li><a href="#Bv">Bem vindo!</a> </a></li>
-      <li><a href="#Habilidades">Principais Habilidades</a></li>
-      <li><a href="#links">Links</a></li>
-    </ul>
-  <p id="Bv" class="pinfo">Bem vindo! Eu sou o Vitor, brasileiro natural de Jundiaí, atualmente residindo em <strong>Cajamar-SP</strong>. <br> Estou estudando para me tornar um <strong>desenvolvedor web</strong>, espero que você não tenha encontrado esse repositório tão cedo, estou <br> aprendendo html e essa é minha primeira página, logo mais a atualizarei para algo mais visualmente agradável.</p>
+    <h1 class="pinfo">Vitor Martins Diorio</h1>
+    <div style="display:inline-block;vertical-align:top;"> <!--Funcionou, mas preciso descobrir o que raios é div dps -->
+    <img class="profile" class="centered" src="https://scontent-gru1-2.xx.fbcdn.net/v/t1.6435-9/135854456_3915229745196472_2838909640067091478_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_eui2=AeFY7SSpHIFUTn4TUw4RBE7ctihjU6clzEC2KGNTpyXMQA2qqNj09-Sdkd_eYVIkSp2fNoac7QdCoJ1l8n0eDxZr&_nc_ohc=eewN_deHQnQAX848NOQ&_nc_ht=scontent-gru1-2.xx&oh=d7a6e3cf216e8a192ebe5da6ed7b2003&oe=60FDE1F8" alt="Vitor caminhando na praia com uma baita cara de sério pois ele não sabe tirar foto" id="pimg" width="220">
+    </div>
+    <div style="display:inline-block;">
+    <div><a  href="https://www.linkedin.com/in/vitordiorio/"  target="_blank"><img class="smedia" src="Imagens/linkedin.png" alt="" ></a></div>
+    <div><a href="https://github.com/vdiorio" target="_blank"><img class="smedia" src="/Imagens/Giticon.png"alt=""></a></div>
+    <div><a href="https://www.instagram.com/zVitorDiorio/" target="_blank"><img class="smedia" src="/Imagens/instagram.png"alt=""></a></div>
+    <div><a href="https://twitter.com/Samuraidoaxe" target="_blank"><img class="smedia" src="/Imagens/twitter.png"alt=""></a></div>
+  </div>
+  <p id="Bv" class="pinfo">Bem vindo! Eu sou o Vitor, brasileiro natural de Jundiaí, atualmente residindo em <strong>Cajamar-SP</strong>. <br> Estou estudando para me tornar um <strong>desenvolvedor web</strong>, espero que você não tenha encontrado esse repositório tão cedo, estou <br> aprendendo html e essa é minha primeira página, logo mais a atualizarei para algo mais visualmente agradável.
   <h3 id="Habilidades"><strong>Minhas principais habilidades</strong></h3>
   <ul>
     <li>Otimismo e perseverança</li>
@@ -37,9 +40,7 @@
     <li>Foco e resiliência</li>
   </ul>
   <h3 id="links">Links</h3>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/vitordiorio/" target="_blank">Linkedin</a></li>
-    <li><a href="https://github.com/vdiorio" target="_blank">Github</a></li>
-  </ul>
+
+
 </body>
 </html>
