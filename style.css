@@ -1,0 +1,49 @@
+.namecard {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    float: left;
+    color: #E4F4EC;
+}
+.profilepic {
+    border-radius: 50%;
+    border: 8px solid #E4F4EC;
+}
+
+.lista{
+    background-color: #80BCE1;
+    list-style: none;
+    margin-inline: 40%;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+p{
+
+    color: #334B48;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+.fotocard{
+    border-left: 800px;  
+}
+body {
+    font-size: 25px;
+    font-style: none;
+    text-align: center;
+    margin: auto;
+    background-color: #C3FFF7;
+}
+.header {
+    font-family: "roboto", sans-serif;
+    margin: auto;
+    padding: 2% 30%;
+    background-color: #80BCE1;
+    width: max-content;
+}
+.Tlista {
+    background-color: #80BCE1;
+    list-style: none;
+    margin-inline: 40%;
+}
