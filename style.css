@@ -1,49 +1,98 @@
-.namecard {
-    display: block;
-    font-size: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-size: 25px;
     text-align: left;
-    float: left;
-    color: #E4F4EC;
+    margin: auto;
+    margin-bottom: 0;
 }
 .profilepic {
     border-radius: 50%;
-    border: 8px solid #E4F4EC;
+    width: 350px;
+    border: 20px solid #aaaaa8a1;
 }
 
-.lista{
-    background-color: #80BCE1;
-    list-style: none;
-    margin-inline: 40%;
-    font-size: 40px;
-    margin-top: 0;
-}
-
-p{
-
-    color: #334B48;
-    margin-left: 30%;
-    margin-right: 30%;
-
-}
-.fotocard{
-    border-left: 800px;  
-}
-body {
-    font-size: 25px;
-    font-style: none;
-    text-align: center;
-    margin: auto;
-    background-color: #C3FFF7;
-}
 .header {
-    font-family: "roboto", sans-serif;
+    vertical-align: middle;
+    padding: 15% 15%;
+    color: #313131;
+    height: 440px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/Imagens/notebook.png) ;
+}
+.namecard {
+    display: block;
+    float: left;
+    text-align: left;
+    padding: 40px;
+ }
+ .piccard {
+     float: right;
+     vertical-align: middle;
+     display: block;
+ }
+ h1{
+     font-size: 60px;
+     line-height: 54px;
+ }
+ h4 {
+     font-size: 20px;
+ }  
+ .about {
+     padding: 15% 5%;
+
+ }
+ .computer {
+     float: left;
+     display: block;
+     padding-left: 5%;
+     width: 600px;
+     border-radius: 50%;
+    }
+.about-text {
+    display: block;
     margin: auto;
-    padding: 2% 30%;
-    background-color: #80BCE1;
-    width: max-content;
+    padding: 70px 0;
+    margin-left: 850px;
 }
 .Tlista {
-    background-color: #80BCE1;
-    list-style: none;
-    margin-inline: 40%;
+    clear: both;
+}
+
+.colunas {
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    padding: 200px;
+}
+.tec-skills, .pro-skills {
+    display: table-cell;
+    vertical-align: middle;   
+}
+.pic-skills {
+    text-align: right;
+    width: 550px;
+    clear: both;
+    border-radius: 50%;
+    border: 5px solid #000000a1;
+}
+.bottom {
+    text-align: center;
+}
+.button {
+    background-color: rgb(0, 109, 128);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+.button:hover {
+    background-color: rgb(0, 98, 128);;
+}
+.button:active {
+    background-color: rgb(0, 81, 128);;
+}
+a:link, a:visited, a:hover, a:active{
+    color: honeydew;
+    text-decoration: none;
 }
