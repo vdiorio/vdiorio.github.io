@@ -45,9 +45,10 @@ body {
  .computer {
      float: left;
      display: block;
-     padding-left: 5%;
+     margin-left: 5%;
      width: 600px;
      border-radius: 50%;
+     border: 5px solid #142530a1;
     }
 .about-text {
     display: block;
@@ -63,8 +64,7 @@ body {
     display: table;
     width: 100%;
     text-align: center;
-    height: 100%;
-    padding: 200px;
+    padding: 0 200px;
 }
 .tec-skills, .pro-skills {
     display: table-cell;
@@ -75,7 +75,7 @@ body {
     width: 550px;
     clear: both;
     border-radius: 50%;
-    border: 5px solid #000000a1;
+    border: 5px solid #142530a1;
 }
 .bottom {
     text-align: center;
@@ -95,4 +95,16 @@ body {
 a:link, a:visited, a:hover, a:active{
     color: honeydew;
     text-decoration: none;
+}
+h2 {
+    clear: both;
+    text-align: center;
+    padding-top: 5%;
+}
+.topo-lista, .lista {
+    background-color: rgb(233, 233, 233);
+    width: 300px;
+    height: max-content;
+    vertical-align: middle;
+    border-radius: 10px;
 }
