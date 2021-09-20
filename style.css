@@ -1,111 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-body {
-    font-size: 25px;
-    text-align: left;
-    margin: auto;
-    margin-bottom: 0;
+header {
+    display: flex;
+    padding: 6%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
 }
-.profilepic {
+
+header button {
+    align-self: flex-start;
+    height: 35px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: lightskyblue;
+    border: 0px;
+    font-weight: 700;
+    color: white;
+}
+
+header button:hover {
+    background-color: rgb(0, 157, 255);
+}
+
+header img {
     border-radius: 50%;
-    width: 350px;
-    border: 20px solid #aaaaa8a1;
+    width: 20em;
+    border: solid rgb(207, 207, 207) 6px;
+    align-self: flex-end;
 }
 
-.header {
-    vertical-align: middle;
-    padding: 15% 15%;
-    color: #313131;
-    height: 440px;
-    font-family: 'Roboto', sans-serif;
-    background-image: url(/Imagens/notebook.png) ;
-}
-.namecard {
-    display: block;
-    float: left;
-    text-align: left;
-    padding: 40px;
- }
- .piccard {
-     float: right;
-     vertical-align: middle;
-     display: block;
- }
- h1{
-     font-size: 60px;
-     line-height: 54px;
- }
- h4 {
-     font-size: 20px;
- }  
- .about {
-     padding: 15% 5%;
-
- }
- .computer {
-     float: left;
-     display: block;
-     margin-left: 5%;
-     width: 550px;
-     border-radius: 50%;
-     border: 5px solid #142530a1;
-    }
-.about-text {
-    display: block;
-    margin: auto;
-    padding: 70px 0;
-    margin-left: 850px;
-}
-.Tlista {
-    clear: both;
+header h1 {
+    font-size: 2.5em;
 }
 
-.colunas {
-    display: table;
-    width: 100%;
-    text-align: center;
-    padding-left: 200px;
-}
-.tec-skills, .pro-skills {
-    display: table-cell;
-    vertical-align: middle;   
-}
-.pic-skills {
-    text-align: right;
-    width: 550px;
-    clear: both;
-    border-radius: 50%;
-    border: 5px solid #142530a1;
-    margin-right: 180px;
-}
-.bottom {
-    text-align: center;
-}
-.button {
-    background-color: rgb(0, 109, 128);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 40px;
-}
-.button:hover {
-    background-color: rgb(0, 98, 128);;
-}
-.button:active {
-    background-color: rgb(0, 81, 128);;
-}
-a:link, a:visited, a:hover, a:active{
-    color: honeydew;
-    text-decoration: none;
-}
-h2 {
-    clear: both;
-    text-align: center;
-    padding-top: 5%;
-}
-.topo-lista, .lista {
-    background-color: rgb(233, 233, 233);
-    width: 300px;
-    height: max-content;
-    vertical-align: middle;
-    border-radius: 10px;
+header h1 span {
+    color: lightskyblue;
 }
