@@ -7,12 +7,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vitor Diorio</title>
 </head>
+
 <body>
+  <menu>
+    <span>Vitor Diorio</span>
+    <div class="container" onclick="transformButton(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </menu>
+  <!-- <menu>
+    <li>Home</li>
+    <li>About</li>
+    <li>Skills</li>
+    <li>Projects</li>
+  </menu> -->
   <header>
-    <div><h1 id="full-name">Hi,<br>my name is <br><span>Vitor Martins Diorio</span></h1>
-    <button id="contact-button">Contact</button></div>
-    <img src="/Imagens/VitorDiorio.jpg" alt="">
+    <div id="card">
+      <h1 id="full-name">Hi,<br>my name is <br><span>Vitor Martins Diorio</span></h1>
+  </div>
+  <img id="profile-pic" src="/Imagens/VitorDiorio.jpg" alt="">
+  <div id="social">
+    <button id="contact-button">Contact</button>
+    <img src="/Imagens/Giticon.png" alt="">
+    <img src="/Imagens/instagram.png" alt="">
+    <img src="/Imagens/linkedin.png" alt="">
+    <img src="/Imagens/twitter.png" alt="">
+  </div>
   </header>
+  <article>
+    <h1>About</h1>
+    <p>Fueled by high energy levels and boundless enthusiasm, I’m
+    easily inspired and more then willing to follow my fascinations
+    wherever they take me. I’m passionate, expressive, multi-talented
+    spirit with a natural ability to entertain and inspire. I’m never
+    satisfied to just come up with ideas. Instead I have an almost
+    impulsive need to act on them.</p>
+    <p>Abundant energy fuels me in the pursuit of many interests,
+    hobbies, areas of study and artistic endeavors. I’m a fast learner,
+    able to pick up new skills and juggle different projects and roles
+    with relative ease.</p> 
+    <h2>Always growing list of skills:</h2>
+  </article>
+  <article id="skills">
+    <div id='hard-skills' class="skills-card">
+      <img src="/Imagens/Dev.svg" alt="">
+      <h1 class="skills-card">Developing</h1>
+    <span class="skills-card">I like to code things from scratch, and enjoy bringing ideas to life in the browser</span>
+    <hr>
+      <h3 class="skills-card">Things I've learned thus far</h3>
+        <li>Unix & Bash</li>
+        <li>Git</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </div>
+    <div id="soft-skills" class="skills-card">
+    <img src="/Imagens/Soft.svg" alt="">
+    <h1 class="skills-card">Soft-skills</h1>
+    <span class="skills-card">I genuinely care about people, and love helping fellow designers work on their craft.</span>
+    <hr>
+    <h3 class="skills-card">Things I'm proud to say about me</h3>
+      <li>Self-management</li>
+      <li>Colaboration</li>
+      <li>Creativity</li>
+      <li>Empaty</li>
+      <li>Problem Solving</li>
+    </div>
+  </article>
   <script src="script.js"></script>
 </body>
 </html>
