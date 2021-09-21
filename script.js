@@ -1,5 +1,9 @@
-function transformButton(menu) {
-  menu.classList.toggle("change");
+const invisibleMenu = document.querySelector('.invisible')
+const menuButton = document.querySelector('.container')
+
+function transformButton() {
+  menuButton.classList.toggle("change");
+  invisibleMenu.classList.toggle("invisible")
 }
 
 function createProjectCard({ title, html_url}) {

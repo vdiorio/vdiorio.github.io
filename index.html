@@ -11,18 +11,20 @@
 <body>
   <menu>
     <span>Vitor Diorio</span>
-    <div class="container" onclick="transformButton(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
+    <nav>
+      <div class="container" onclick="transformButton()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="invisible" onclick="transformButton()">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project-cards">Projects</a></li>
+      </ul>
+   </nav>
   </menu>
-  <!-- <menu>
-    <li>Home</li>
-    <li>About</li>
-    <li>Skills</li>
-    <li>Projects</li>
-  </menu> -->
   <header>
     <div id="card">
       <h1 id="full-name">Hi,<br>my name is <br><span>Vitor Martins Diorio</span></h1>
@@ -36,7 +38,7 @@
     <img src="/Imagens/twitter.png" alt="">
   </div>
   </header>
-  <article>
+  <article id="about">
     <h1>About me</h1>
     <p>Fueled by high energy levels and boundless enthusiasm, I’m
     easily inspired and more then willing to follow my fascinations
@@ -49,8 +51,8 @@
     able to pick up new skills and juggle different projects and roles
     with relative ease.</p> 
   </article>
-  <h2>Always growing list of skills:</h2>
-  <section id="skills">
+  <h2 id="skills">Always growing list of skills:</h2>
+  <section>
     <div id='hard-skills' class="skills-card, shadow-card">
       <img src="/Imagens/Dev.svg" alt="">
       <h1 class="skills-card">Developing</h1>

@@ -3,6 +3,7 @@
     border: 0 0;
     padding: 0 0;
     list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -73,15 +74,21 @@ menu {
     background-color: #2FC18C;
     border-radius: 10px;
 }
-
 menu span {
     margin-left: 20px;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.invisible {
+    display: none;
 }
 
 .container {
     cursor: pointer;
     width: fit-content;
     padding: 5px 10px;
+    display: inline-block;
   }
   
   .bar1, .bar2, .bar3 {
@@ -104,7 +111,11 @@ menu span {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.change {
+}
+
 article, section {
+    scroll-margin-top: 4em;
     text-align: center;
 }
 
@@ -145,6 +156,7 @@ p {
 }
 
 h2 {
+    scroll-margin-top: 3em;
     text-align: center;
 }
 
@@ -177,3 +189,10 @@ h2 {
     transition: transform 100ms;
     transform: translateY(-8px);
   }
+
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
