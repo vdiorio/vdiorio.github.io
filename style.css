@@ -14,9 +14,7 @@ header {
     padding: 6%;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
-    background: linear-gradient(0deg, white 30%, rgb(245,245,245) 70%);
-    
+    align-content: center;    
 }
 
 #card {
