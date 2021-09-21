@@ -144,7 +144,7 @@ p {
     border-radius: 30px;
     padding: 60px 30px;
     padding-top: 20px;
-    margin: 10px 0;
+    margin: 30px 60px;
     background-color: white;
     box-shadow: 3px 3px 3px 2px #2FC18C;
 }
@@ -163,10 +163,11 @@ h2 {
 #project-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #project-cards div {
-    width: 200px;
+    width: 180px;
     height: 50px;
     margin: 20px;
     display: flex;
@@ -185,7 +186,7 @@ h2 {
 }
 
 #project-cards div:active {
-    box-shadow: 2px 1px 3px 1px #2FC18C;
+    box-shadow: 1px 1px 1px 1px #2FC18C;
     transition: transform 100ms;
     transform: translateY(-8px);
   }
