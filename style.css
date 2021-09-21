@@ -30,14 +30,14 @@ header button {
     height: 35px;
     width: 150px;
     border-radius: 15px;
-    background-color: lightskyblue;
+    background-color: #2FC18C;
     border: 0px;
     font-weight: 700;
     color: white;
 }
 
 header button:hover {
-    background-color: rgb(0, 157, 255);
+    background-color: #00b472;
 }
 
 header #profile-pic{
@@ -52,7 +52,7 @@ header h1 {
 }
 
 header h1 span {
-    color: rgb(66, 181, 252);
+    color: #2FC18C;
 }
 
 
@@ -104,7 +104,7 @@ menu span {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-article {
+article, section {
     text-align: center;
 }
 
@@ -130,9 +130,50 @@ p {
 }
 
 #hard-skills, #soft-skills {
-    background-color: white;
     border-radius: 30px;
     padding: 60px 30px;
     padding-top: 20px;
+    margin: 10px 0;
+    background-color: white;
     box-shadow: 3px 3px 3px 2px #2FC18C;
 }
+
+.small-card {
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 3px 3px 3px 2px #2FC18C;
+}
+
+h2 {
+    text-align: center;
+}
+
+#project-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project-cards div {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 300ms ease-out 100ms;
+}
+
+#project-cards div:hover {
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+    transition: transform 500ms;
+    transform: translateY(-10px);
+}
+
+#project-cards div:active {
+    box-shadow: 2px 1px 3px 1px #2FC18C;
+    transition: transform 100ms;
+    transform: translateY(-8px);
+  }
