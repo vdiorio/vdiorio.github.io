@@ -64,7 +64,7 @@ header h1 span {
 
 menu {
     margin-left: 2.5%;
-    top: 10px;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     width: 95%;
