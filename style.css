@@ -140,11 +140,18 @@ p {
     justify-content: space-evenly;
 }
 
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 #hard-skills, #soft-skills {
+    width: 300px;
     border-radius: 30px;
     padding: 60px 30px;
     padding-top: 20px;
-    margin: 30px 60px;
+    margin: 30px;
     background-color: white;
     box-shadow: 3px 3px 3px 2px #2FC18C;
 }
@@ -196,4 +203,22 @@ h2 {
     position: relative;
     top: -250px;
     visibility: hidden;
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 750px;
+        margin: auto;
+        align-items: center;
+    }
+    #social {
+        transform: translateY(-70px);
+    }
+    #project-cards div {
+        width: 300px;
+        height: 200px;
+        font-size: 30px;
+    }
 }
