@@ -21,7 +21,7 @@ function createProjectCard({ title, html_url}) {
 function getVitorPullRequests() {
   return fetch('https://api.github.com/search/issues?q=state%3Aopen+author%3Avdiorio+type%3Apr')
   .then((response) => response.json())
-  .then((object) => object.items.forEach((project) =>{
+  .then((object) => object.items.filter((project) => project.comments_url.includes('tryber/sd')).forEach((project) =>{
     createProjectCard(project);
   }));
 }
