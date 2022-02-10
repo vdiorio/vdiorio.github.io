@@ -9,11 +9,8 @@ import twitter from "./Imagens/twitter.png"
 
 function App() {
   useEffect(() => {
-    const observer = new IntersectionObserver(handleVisible, options);
     window.addEventListener('scroll', handleScroll, true)
-    observer.observe(document.querySelector('#about'));
     return () => {
-      IntersectionObserver.disconect();
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -22,26 +19,15 @@ function App() {
     setScrollPercent(event.srcElement.scrollTop - 400)
   }
 
-  const options = {
-    root: document.querySelector('#scrollArea'),
-    rootMargin: '0px',
-    threshold: 1.0
-  }
-
-  const [aboutClasses, setAboutClasses] = useState('background-title');
   const [scrollPercent, setScrollPercent] = useState(-500);
-
-  const handleVisible = (entries) => {
-    return entries[0].isIntersecting && !aboutClasses.includes('animate') 
-      ? setAboutClasses((oldState) => oldState + ' ' + animPrefix + 'fadeIn') : true
-  }
 
   const animPrefix = 'animate__animated animate__'
   const styles = {
     transform: `translateX(${(scrollPercent) * 0.1}%)`,
     position: 'absolute',
     width: '100%',
-    height: '100%'
+    height: '100%',
+    top: 0
   }
   
   return (
@@ -54,20 +40,20 @@ function App() {
         </div>
       </div>
       <div className="slide half">
+        <h1 className="background-title" id="about" style={styles}>SOBRE MIM</h1>
         <p className='text-wbackground'>Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT. </p>
-        <h1 className={aboutClasses} id="about" style={styles}>SOBRE MIM</h1>
       </div>
       <div className='slide'>
       </div>
       <div className="slide half">
         <h1
-          className={aboutClasses}
+          className="background-title"
           id="icon"
           style={{
-            transform: `translateX(${(scrollPercent - 900) * 0.1}%)`,
+            transform: `translateX(${(scrollPercent - 400) * 0.1}%)`,
             position: 'absolute',
             width: '100%',
-            height: '100%'
+            height: '100%',
           }}
         >
           CONTATO
