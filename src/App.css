@@ -1,12 +1,14 @@
 * {
-  margin: 0;
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
+  list-style: circle;
+  text-decoration: none;
 }
 
 .body {
   height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .slide {
@@ -18,11 +20,21 @@
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.project-cards {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: null;
+  color: white;
   overflow: hidden;
 }
 
 .half {
-  min-height: 20vh;
+  min-height: 40vh;
   position: relative;
   flex-direction: column;
   align-items: flex-end;
@@ -40,7 +52,8 @@
 
 .background-title {
   font-size: 15vh;
-  opacity: 0.05;
+  opacity: 0.1;
+  width: 1000;
 }
 
 .text-wbackground {
@@ -50,32 +63,165 @@
   margin-right: 20px;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-bottom: 20vh;
+  background-color: rgba(0,0,0,0);
 }
 
 .icon {
-  width: 10vh;
+  width: 8vh;
   margin-left: 2vw;
 }
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  position: absolute;
+}
+
+.project-caroussel {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  min-height: 80%;
+}
+
+.project-description {
+  max-width: 40%;
+}
+
+.project-description p {
+  min-height: 10vh;
+}
+
+.projects-screenshots {
+  display: flex;
+  flex-direction: row;
+}
+
+.screenshot {
+  width: 30vh;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}  
+
+.animate__animated.animate__fadeIn, .animate__animated.animate__zoomInLeft,.animate__animated.animate__zoomInRight, .animate__animated.animate__zoomInDown, .animate__animated.animate__zoomInUp {
+  --animate-duration: 2s;
+}
+/* From cssbuttons.io by @westitan */
+button {
+  position: relative;
+  padding: 19px 36px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer; 
+ }
+ 
+ button span {
+  position: relative;
+  color: #fff;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+ }
+ 
+ button .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+ }
+ 
+ button .liquid::after,
+ button .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #fff;
+ }
+ 
+ button .liquid::before {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+ }
+ 
+ button .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+ }
+ 
+ button:hover .liquid {
+  top: -120px;
+ }
+ 
+ @keyframes animate {
+  0% {
+   transform: translate(-50%, -75%) rotate(0deg);
+  }
+ 
+  100% {
+   transform: translate(-50%, -75%) rotate(360deg);
+  }
+ }
 
 @media only screen and (max-width: 900px) {
   .slide {
     flex-direction: column;
   }
 
-  .background-title {
-    font-size: 6vh;
-    opacity: 0.05;
+  .myPicture {
+    height: 350px;
+    border-radius: 350px;
   }
-}
-
-@media only screen and (max-width: 350px) {
   .background-title {
-    font-size: 4vh;
+    font-size: 7vh;
   }
-}
+  
+  .project-description {
+    max-width: 100%;
+  }
 
-@media only screen and (max-width: 500px) {  
-  .background-title {
-    font-size: 4vh;
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .projects-screenshots {
+    margin-top: 2vh;
+    overflow-x: scroll;
+  }  
+
+  .screenshot{
+    width: 20vh;
   }
 }
