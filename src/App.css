@@ -1,0 +1,63 @@
+.body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.slide {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+.half {
+  min-height: 20vh;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.myPicture {
+  height: 300px;
+  border-radius: 300px;
+}
+
+.name-card {
+  text-align: center;
+}
+
+.background-title {
+  font-size: 12vw;
+  line-height: 12vw;
+  opacity: 0.05;
+}
+
+.text-wbackground {
+  width: 50%;
+  margin-top: 12%;
+  z-index: 10;
+  margin-right: 20px;
+}
+
+.icon {
+  width: 10vw;
+  margin-left: 2vw
+}
+
+@media only screen and (max-width: 900px) {
+  .slide {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+}
+
+@media only screen and (max-width: 500px) {  
+}
