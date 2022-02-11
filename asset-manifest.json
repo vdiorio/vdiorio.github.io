@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef0f637c.css",
+    "main.js": "/static/js/main.13313042.js",
+    "static/js/787.1b308d8a.chunk.js": "/static/js/787.1b308d8a.chunk.js",
+    "static/media/RecipesApp1.png": "/static/media/RecipesApp1.228c4b69255c363e1bfe.png",
+    "static/media/RecipesApp2.png": "/static/media/RecipesApp2.9646e3758afe7b60e3c8.png",
+    "static/media/RecipesApp3.png": "/static/media/RecipesApp3.dae24df206d31b58b41d.png",
+    "static/media/VitorDiorio.jpg": "/static/media/VitorDiorio.ee5653c221940175bb65.jpg",
+    "static/media/EdhCounter2.png": "/static/media/EdhCounter2.3938b990fa3e66c784dd.png",
+    "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/EdhCounter3.png": "/static/media/EdhCounter3.7a25edb9a48133db9631.png",
+    "static/media/EdhCounter1.png": "/static/media/EdhCounter1.9c9077dbbc472506d740.png",
+    "static/media/Giticon.png": "/static/media/Giticon.28d9566faccaec6384bd.png",
+    "static/media/linkedin.png": "/static/media/linkedin.1dd143a731afb245bf24.png",
+    "static/media/twitter.png": "/static/media/twitter.28b4dce41e4e33858919.png",
+    "index.html": "/index.html",
+    "main.ef0f637c.css.map": "/static/css/main.ef0f637c.css.map",
+    "main.13313042.js.map": "/static/js/main.13313042.js.map",
+    "787.1b308d8a.chunk.js.map": "/static/js/787.1b308d8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef0f637c.css",
+    "static/js/main.13313042.js"
+  ]
+}
