@@ -10,7 +10,7 @@ import RecipesAppCard from './components/RecipesAppCard';
 import EdhCounterCard from './components/EdhCounterCard';
 
 function App() {
-  const language = window.navigator.userLanguage || window.navigator.language;
+  const [language, setLanguage] = useState((window.navigator.userLanguage || window.navigator.language).includes('pt'));
   const timer = useRef();
   const options = {
     rootMargin: '0px',
@@ -63,22 +63,28 @@ function App() {
   
   return (
     <div className='body'>
+      <div class="switch">
+        <input onChange={() => setLanguage((last) => !last)} id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked={!language} />
+        <label for="language-toggle"></label>
+        <span class="on">PT</span>
+        <span class="off">EN</span>
+      </div>
       <div className="slide">
         <img className={'myPicture ' + animPrefix + ('backInUp')} src={myPicture} alt="Vitor Diorio" />
         <div className={'name-card ' + animPrefix + ('backInUp')}>        
           <h1>Vitor Martins Diorio</h1>
-          <h5>{language.includes('pt') ? 'Desenvolvedor Full-Stack' : 'Full-Stack Developer'}</h5>
+          <h5>{language ? 'Desenvolvedor Full-Stack' : 'Full-Stack Developer'}</h5>
         </div>
       </div>
       <div className="slide half">
-        <h1 className="background-title" id="about" style={styles}>{language.includes('pt') ? 'SOBRE MIM' : 'ABOUT ME'}</h1>
+        <h1 className="background-title" id="about" style={styles}>{language ? 'SOBRE MIM' : 'ABOUT ME'}</h1>
         <p className='text-wbackground'>{
-          language.includes('pt') ? 'Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT.' : 'Full-Stack developer from São Paulo/Brasil currently studing in TRYBE. I make web applications! Mainly in React'
+          language ? 'Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT.' : 'Full-Stack developer from São Paulo/Brasil currently studing in TRYBE. I make web applications! Mainly in React'
         }</p>
       </div>
         <div className={'slide project-cards ' + projectAnimation} style={{ opacity: 0 }}>
         <div className='projects-header'>
-          <h1>{language.includes('pt') ? 'Projetos:' : 'Projects:'}</h1>
+          <h1>{language ? 'Projetos:' : 'Projects:'}</h1>
           <button onClick={() => {
               setProjectVisible(!projectVisible);
               clearInterval(timer.current);
@@ -88,8 +94,8 @@ function App() {
           </button>
         </div >
         <div className='project-caroussel'  id="projects">
-          <RecipesAppCard visible={projectVisible} />
-          <EdhCounterCard visible={!projectVisible} />
+          <RecipesAppCard visible={projectVisible} language={language} />
+          <EdhCounterCard visible={!projectVisible} language={language} />
         </div>
       </div>
       <div className="slide half skills">
@@ -104,7 +110,7 @@ function App() {
             top: 0
           }}
         >
-          {language.includes('pt') ? 'HABILIDADES' : 'SKILLS'}
+          {language ? 'HABILIDADES' : 'SKILLS'}
         </h1>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
             <ul>
@@ -134,7 +140,7 @@ function App() {
             top: 0
           }}
         >
-          {language.includes('pt') ? 'CONTATO' : 'CONTACT'}
+          {language ? 'CONTATO' : 'CONTACT'}
         </h1>
         <div className={'text-wbackground ' + contactAnimation} style={{opacity: 0}} id='contact'>
           <a href="https://github.com/vdiorio" ><img className='icon' src={Giticon} alt="Github" /></a>

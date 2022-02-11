@@ -3,9 +3,8 @@ import recipesApp1 from "../Imagens/RecipesApp1.png"
 import recipesApp2 from "../Imagens/RecipesApp2.png"
 import recipesApp3 from "../Imagens/RecipesApp3.png"
 
-export default function RecipesAppCard({visible}) {
+export default function RecipesAppCard({visible, language}) {
   const animPrefix = 'animate__animated animate__'
-  const language = window.navigator.userLanguage || window.navigator.language;
   return (
     <div
       className={'projects ' + animPrefix + (visible ? 'fadeIn' : 'fadeOut')}
@@ -13,10 +12,10 @@ export default function RecipesAppCard({visible}) {
     >
     <div className='project-description'>
       <h3>Recipes App</h3>
-      <p>{ language.includes('pt') ? 'Um aplicativo de receitas para conhecer, favoritar e preparar receitas.' : 'A app for find, fav and make recipes.' }</p>
+      <p>{ language ? 'Um aplicativo de receitas para conhecer, favoritar e preparar receitas.' : 'A app for find, favorite and make recipes.' }</p>
       <a href='http://recipes-app-mu.vercel.app'>
         <button>
-          <span>{language.includes('pt') ? 'TESTE' : 'TEST'}</span>
+          <span>{language ? 'TESTE' : 'TEST'}</span>
           <div className="liquid" />
         </button>
       </a><br />
