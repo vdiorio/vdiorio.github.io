@@ -5,6 +5,16 @@
   text-decoration: none;
 }
 
+ul {
+  display: inline;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+li {
+  font-size: 40px;
+}
+
 .body {
   height: 100vh;
   overflow-y: scroll;
@@ -60,11 +70,14 @@
   display: flex;
   width: 50%;
   z-index: 10;
-  margin-right: 20px;
-  justify-content: flex-end;
-  align-items: flex-end;
+  margin-right: 80px;
   margin-bottom: 20vh;
   background-color: rgba(0,0,0,0);
+}
+
+.skills {
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .icon {
@@ -223,5 +236,19 @@ button {
 
   .screenshot{
     width: 20vh;
+  }
+
+  li {
+    font-size: 20px;
+  }
+  
+  .text-wbackground {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-wbackground {
+    margin-right: 130px;
   }
 }

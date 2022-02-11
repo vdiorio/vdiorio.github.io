@@ -92,6 +92,36 @@ function App() {
           <EdhCounterCard visible={!projectVisible} />
         </div>
       </div>
+      <div className="slide half skills">
+        <h1
+          className="background-title"
+          id="icon"
+          style={{
+            transform: `translateX(${(-scrollPercent + 1300) * 0.08}%)`,
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            top: 0
+          }}
+        >
+          {language.includes('pt') ? 'HABILIDADES' : 'SKILLS'}
+        </h1>
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GIT</li>
+              <li>GITHUB</li>
+              <li>REACT</li>
+            </ul>
+            <ul>
+              <li>REACT NATIVE</li>
+              <li>JAVASCRIPT</li>
+              <li>DOCKER</li>
+              <li>MYSQL</li>
+            </ul>
+          </div>
+      </div>
       <div className="slide half">
         <h1
           className="background-title"
