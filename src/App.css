@@ -69,11 +69,14 @@ li {
 
 .text-wbackground {
   display: flex;
-  width: 50%;
+  align-items: flex-end;
   z-index: 10;
-  margin-right: 80px;
-  margin-bottom: 20vh;
+  margin-bottom: 20vh; 
   background-color: rgba(0,0,0,0);
+}
+
+.right {
+  width: 60%;
 }
 
 .skills {
@@ -344,20 +347,10 @@ button {
   }  
 
   .screenshot{
-    width: 20vh;
+    width: 19vh;
   }
 
   li {
     font-size: 20px;
-  }
-  
-  .text-wbackground {
-    margin-right: 100px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .text-wbackground {
-    margin-right: 130px;
   }
 }

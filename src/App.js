@@ -79,7 +79,7 @@ function App() {
       </div>
       <div className="slide half">
         <h1 className="background-title" id="about" style={styles}>{language ? 'SOBRE MIM' : 'ABOUT ME'}</h1>
-        <p className='text-wbackground'>{
+        <p className='text-wbackground right'>{
           language ? 'Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT.' : 'Full-Stack developer from São Paulo/Brasil currently studing in TRYBE. I make web applications! Mainly in React'
         }</p>
       </div>
