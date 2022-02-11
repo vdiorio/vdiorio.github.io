@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bdcac8a.css",
+    "main.css": "/static/css/main.5518f202.css",
     "main.js": "/static/js/main.7e6deb74.js",
     "static/js/787.1b308d8a.chunk.js": "/static/js/787.1b308d8a.chunk.js",
     "static/media/RecipesApp1.png": "/static/media/RecipesApp1.228c4b69255c363e1bfe.png",
@@ -15,12 +15,12 @@
     "static/media/linkedin.png": "/static/media/linkedin.1dd143a731afb245bf24.png",
     "static/media/twitter.png": "/static/media/twitter.28b4dce41e4e33858919.png",
     "index.html": "/index.html",
-    "main.0bdcac8a.css.map": "/static/css/main.0bdcac8a.css.map",
+    "main.5518f202.css.map": "/static/css/main.5518f202.css.map",
     "main.7e6deb74.js.map": "/static/js/main.7e6deb74.js.map",
     "787.1b308d8a.chunk.js.map": "/static/js/787.1b308d8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bdcac8a.css",
+    "static/css/main.5518f202.css",
     "static/js/main.7e6deb74.js"
   ]
 }
