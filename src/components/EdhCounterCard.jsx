@@ -5,6 +5,7 @@ import EdhCounter3 from "../Imagens/EdhCounter3.png"
 
 export default function EdhCounterCard({visible}) {
   const animPrefix = 'animate__animated animate__'
+  const language = window.navigator.userLanguage || window.navigator.language;
   return (
     <div
       className={'projects ' + animPrefix + (visible ? 'fadeIn' : 'fadeOut')}
@@ -12,10 +13,10 @@ export default function EdhCounterCard({visible}) {
     >
     <div className='project-description'>
       <h3>EdhCounter</h3>
-      <p>Um aplicativo contador de vida para o jogo Magic the Gathering focado no formato COMMANDER.</p>
+      <p>{ language.includes('pt') ? 'Um aplicativo contador de vida para o jogo Magic the Gathering focado no formato COMMANDER.' : 'A app for the game Magic The Gathering crafted for the COMMANDER format' }</p>
       <a href='https://expo.dev/@vdiorio/EdhCounter'>
         <button>
-          <span>Teste</span>
+          <span>{language.includes('pt') ? 'TESTE' : 'TEST'}</span>
           <div className="liquid" />
         </button>
       </a><br />

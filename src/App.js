@@ -10,11 +10,13 @@ import RecipesAppCard from './components/RecipesAppCard';
 import EdhCounterCard from './components/EdhCounterCard';
 
 function App() {
+  const language = window.navigator.userLanguage || window.navigator.language;
   const timer = useRef();
   const options = {
     rootMargin: '0px',
     threshold: 1.0
   }
+
   useEffect(() => {
     const observerProject = new IntersectionObserver(handleVisible, options);
     observerProject.observe(document.querySelector('#projects'));
@@ -61,20 +63,22 @@ function App() {
   
   return (
     <div className='body'>
-      <div className="slide" onScroll={(e) => console.log(e)}>
+      <div className="slide">
         <img className={'myPicture ' + animPrefix + ('backInUp')} src={myPicture} alt="Vitor Diorio" />
         <div className={'name-card ' + animPrefix + ('backInUp')}>        
           <h1>Vitor Martins Diorio</h1>
-          <h5>Full-Stack Developer</h5>
+          <h5>{language.includes('pt') ? 'Desenvolvedor Full-Stack' : 'Full-Stack Developer'}</h5>
         </div>
       </div>
       <div className="slide half">
-        <h1 className="background-title" id="about" style={styles}>SOBRE MIM</h1>
-        <p className='text-wbackground'>Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT. </p>
+        <h1 className="background-title" id="about" style={styles}>{language.includes('pt') ? 'SOBRE MIM' : 'ABOUT ME'}</h1>
+        <p className='text-wbackground'>{
+          language.includes('pt') ? 'Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT.' : 'Full-Stack developer from São Paulo/Brasil currently studing in TRYBE. I make web applications! Mainly in React'
+        }</p>
       </div>
         <div className={'slide project-cards ' + projectAnimation} style={{ opacity: 0 }}>
         <div className='projects-header'>
-          <h1>Projetos:</h1>
+          <h1>{language.includes('pt') ? 'Projetos:' : 'Projects:'}</h1>
           <button onClick={() => {
               setProjectVisible(!projectVisible);
               clearInterval(timer.current);
@@ -100,7 +104,7 @@ function App() {
             top: 0
           }}
         >
-          CONTATO
+          {language.includes('pt') ? 'CONTATO' : 'CONTACT'}
         </h1>
         <div className={'text-wbackground ' + contactAnimation} style={{opacity: 0}} id='contact'>
           <a href="https://github.com/vdiorio" ><img className='icon' src={Giticon} alt="Github" /></a>
