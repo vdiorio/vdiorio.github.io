@@ -12,6 +12,7 @@ import EdhCounterCard from './components/EdhCounterCard';
 
 function App() {
   const [language, setLanguage] = useState((window.navigator.userLanguage || window.navigator.language).includes('pt'));
+  const [loaded, setLoaded] = useState((0));
   const timer = useRef();
   const options = {
     rootMargin: '0px',
@@ -70,18 +71,29 @@ function App() {
         <span class="on">PT</span>
         <span class="off">EN</span>
       </div>
-      <div className="slide">
-        <img className={'myPicture ' + animPrefix + ('backInUp')} src={myPicture} alt="Vitor Diorio" />
-        <div className={'name-card ' + animPrefix + ('backInUp')}>        
+      <div className="slide" style={{ opacity: loaded }}>
+        <img
+          className={loaded && 'myPicture ' + animPrefix + ('backInUp')}
+          src={myPicture}
+          alt="Vitor Diorio"
+          onLoad={() => setLoaded(1)}
+          />
+        <div className={loaded && 'name-card ' + animPrefix + ('backInUp')}>        
           <h1>Vitor Martins Diorio</h1>
           <h5>{language ? 'Desenvolvedor Full-Stack' : 'Full-Stack Developer'}</h5>
         </div>
       </div>
       <div className="slide half">
         <h1 className="background-title" id="about" style={styles}>{language ? 'SOBRE MIM' : 'ABOUT ME'}</h1>
-        <p className='text-wbackground right'>{
-          language ? 'Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE, Eu faço aplicações web! Principalmente em REACT.' : 'Full-Stack developer from São Paulo/Brasil currently studing in TRYBE. I make web applications! Mainly in React'
-        }</p>
+        {language ? 
+        <p className='text-wbackground right'>
+          Desenvolvedor Full-Stack de Cajamar-SP estudando na TRYBE.<br />
+          Eu faço aplicações web! Principalmente em REACT.
+        </p>
+        : <p className='text-wbackground right'>
+        Full-Stack developer from São Paulo/Brasil currently studing in TRYBE.<br />
+        I make web applications! Mainly in REACT.
+      </p>}
       </div>
         <div className={'slide project-cards ' + projectAnimation} style={{ opacity: 0 }}>
         <div className='projects-header'>
