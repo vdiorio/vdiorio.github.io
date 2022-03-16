@@ -13,13 +13,13 @@ export default function RecipesAppCard({visible, language}) {
     <div className='project-description'>
       <h3>Recipes App</h3>
       <p>{ language ? 'Um aplicativo de receitas para conhecer, favoritar e preparar receitas.' : 'A app for find, favorite and make recipes.' }</p>
-      <a href='http://recipes-app-mu.vercel.app'>
+      <a href='http://recipes-app-mu.vercel.app' target="_blank" rel="noreferrer">
         <button>
           <span>{language ? 'TESTE' : 'TEST'}</span>
           <div className="liquid" />
         </button>
       </a><br />
-      <a href='https://github.com/vdiorio/Recipes-App'>
+      <a href='https://github.com/vdiorio/Recipes-App' target="_blank" rel="noreferrer">
       <button>
         <span>Github</span>
         <div className="liquid" />

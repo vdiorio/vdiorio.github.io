@@ -9,6 +9,18 @@ import linkedin from "./Imagens/linkedin.png"
 import twitter from "./Imagens/twitter.png"
 import RecipesAppCard from './components/RecipesAppCard';
 import EdhCounterCard from './components/EdhCounterCard';
+import { ReactComponent as Html } from './Imagens/dev-Icons/html.svg'
+import { ReactComponent as Css } from './Imagens/dev-Icons/css.svg'
+import { ReactComponent as Docker } from './Imagens/dev-Icons/docker.svg'
+import { ReactComponent as Git } from './Imagens/dev-Icons/git.svg'
+import { ReactComponent as Javascript } from './Imagens/dev-Icons/javascript.svg'
+import { ReactComponent as Jest } from './Imagens/dev-Icons/jest.svg'
+import { ReactComponent as Mocha } from './Imagens/dev-Icons/mocha.svg'
+import { ReactComponent as Mysql } from './Imagens/dev-Icons/mysql.svg'
+import { ReactComponent as Node } from './Imagens/dev-Icons/node.svg'
+import { ReactComponent as Npm } from './Imagens/dev-Icons/npm.svg'
+import { ReactComponent as ReactLogo } from './Imagens/dev-Icons/react.svg'
+import { ReactComponent as Redux } from './Imagens/dev-Icons/redux.svg'
 
 function App() {
   const [language, setLanguage] = useState((window.navigator.userLanguage || window.navigator.language).includes('pt'));
@@ -112,33 +124,22 @@ function App() {
         </div>
       </div>
       <div className="slide half skills">
-        <h1
-          className="background-title"
-          id="icon"
-          style={{
-            transform: `translateX(${(-scrollPercent + 1300) * 0.08}%)`,
-            position: 'absolute',
-            width: '100%',
-            height: '100%',
-            top: 0
-          }}
-        >
-          {language ? 'HABILIDADES' : 'SKILLS'}
+        <h1>
+          {language ? 'Pronto para trabalhar com:' : 'Ready to work with:'}
         </h1>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>GIT</li>
-              <li>GITHUB</li>
-              <li>REACT</li>
-            </ul>
-            <ul>
-              <li>REACT NATIVE</li>
-              <li>JAVASCRIPT</li>
-              <li>DOCKER</li>
-              <li>MYSQL</li>
-            </ul>
+          <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
+              <div className='skill-card'><Html /> Html</div>
+              <div className='skill-card'><Css /> Css</div>
+              <div className='skill-card'><Git /> Git</div>
+              <div className='skill-card'><ReactLogo /> React</div>
+              <div className='skill-card'><Jest /> Jest</div>
+              <div className='skill-card'><Redux /> Redux</div>
+              <div className='skill-card'><Npm /> Npm</div>
+              <div className='skill-card'><Javascript /> Javascript</div>
+              <div className='skill-card'><Docker /> Docker</div>
+              <div className='skill-card'><Mysql /> Mysql</div>
+              <div className='skill-card'><Mocha /> Mocha</div>
+              <div className='skill-card'><Node /> Node</div>
           </div>
       </div>
       <div className="slide half">
@@ -156,10 +157,10 @@ function App() {
           {language ? 'CONTATO' : 'CONTACT'}
         </h1>
         <div className={'text-wbackground ' + contactAnimation} style={{opacity: 0}} id='contact'>
-          <a href="https://github.com/vdiorio" ><img className='icon' src={Giticon} alt="Github" /></a>
-          <a href="https://www.instagram.com/zvitordiorio/"><img className='icon' src={instagram} alt="instagram" /></a>
-          <a href="https://www.linkedin.com/in/vitordiorio/"><img className='icon' src={linkedin} alt="linkedin" /></a>
-          <a href="https://twitter.com/Samuraidoaxe"><img className='icon' src={twitter} alt="twitter" /></a>
+          <a href="https://github.com/vdiorio" target="_blank" rel="noreferrer"><img className='icon' src={Giticon} alt="Github" /></a>
+          <a href="https://www.instagram.com/zvitordiorio/" target="_blank" rel="noreferrer"><img className='icon' src={instagram} alt="instagram" /></a>
+          <a href="https://www.linkedin.com/in/vitordiorio/" target="_blank" rel="noreferrer"><img className='icon' src={linkedin} alt="linkedin" /></a>
+          <a href="https://twitter.com/Samuraidoaxe" target="_blank" rel="noreferrer"><img className='icon' src={twitter} alt="twitter" /></a>
         </div>
       </div>
     </div>

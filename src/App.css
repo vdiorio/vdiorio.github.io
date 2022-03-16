@@ -11,8 +11,24 @@ ul {
   margin-left: 10%;
 }
 
-li {
-  font-size: 40px;
+.skill-card {
+  width: 130px;
+  height: 155px;
+  margin: 25px;
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 20px;
+  background: #262629;
+  justify-content: center;
+  opacity: 1;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  transition: background-color 1s ease-out 100ms
+}
+
+.skill-card:hover {
+  background: rgb(81, 42, 88);
 }
 
 .body {
@@ -353,4 +369,19 @@ button {
   li {
     font-size: 20px;
   }
+
+  
+.skill-card {
+  width: 70px;
+  height: 95px;
+  margin: 25px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 20px;
+  justify-content: center;
+  opacity: 1;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+}
 }

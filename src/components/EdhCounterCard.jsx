@@ -13,13 +13,13 @@ export default function EdhCounterCard({visible, language}) {
     <div className='project-description'>
       <h3>EdhCounter</h3>
       <p>{ language ? 'Um aplicativo contador de vida para o jogo Magic the Gathering focado no formato COMMANDER.' : 'A app for the game Magic The Gathering crafted for the COMMANDER format.' }</p>
-      <a href='https://play.google.com/store/apps/details?id=com.vdiorio.EdhCounter'>
+      <a href='https://play.google.com/store/apps/details?id=com.vdiorio.EdhCounter' target="_blank" rel="noreferrer">
         <button>
           <span>{language ? 'TESTE' : 'TEST'}</span>
           <div className="liquid" />
         </button>
       </a><br />
-      <a href='https://github.com/vdiorio/EdhCounter'>
+      <a href='https://github.com/vdiorio/EdhCounter' target="_blank" rel="noreferrer">
       <button>
         <span>Github</span>
         <div className="liquid" />
