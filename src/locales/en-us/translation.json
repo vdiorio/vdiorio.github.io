@@ -4,7 +4,8 @@
   "work": "Work",
   "contact": "Contact",
   "resume": "Resume",
-  "hiMyNameis": "Hi, my name is",
-  "iBuild": "I build web applications",
-  "quickSummary": "Quick summary"
+  "hero-greeting": "Hi, my name is",
+  "hero-subtitle": "I build web apps",
+  "hero-description": "I am a web developer specializing in creating functional web applications that provide seamless user experiences. I leverage modern frameworks to build responsive websites and optimize performance, blending creativity with technology to deliver tailored solutions.",
+  "hero-button": "Check out my ..."
 }

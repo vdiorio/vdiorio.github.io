@@ -3,7 +3,7 @@ export const useStyles = () => {
     root: {
       display: "inline-block",
       color: "text.primary",
-      fontSize: "20px",
+      fontSize: "16px",
     },
   };
 };
