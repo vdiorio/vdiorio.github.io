@@ -10,6 +10,7 @@ const Logo = ({ sx: { color = "inherit", width = 100, ...rest } }) => {
       viewBox="0 0 419.000000 386.000000"
       preserveAspectRatio="xMidYMid meet"
       style={rest}
+      data-testid="logo"
     >
       <g
         transform="translate(0.000000,386.000000) scale(0.100000,-0.100000)"

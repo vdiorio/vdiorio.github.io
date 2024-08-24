@@ -15,7 +15,7 @@ export const useStyles = () => {
     },
     logo: {
       color: theme.palette.primary.main,
-      width: 50,
+      width: 60,
     },
   };
 };

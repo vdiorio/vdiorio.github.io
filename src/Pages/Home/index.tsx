@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <Box>
       <Header />
+      <Box sx={{ height: "200vh" }} />
     </Box>
   );
 }

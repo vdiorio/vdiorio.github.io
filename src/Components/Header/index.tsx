@@ -27,16 +27,14 @@ export default function Header() {
       setHeaderStyle({});
     } else if (currentScrollY > scrollRef.current) {
       setHeaderStyle({
-        height: "70px",
         transform: "translateY(-70px)",
-        backgroundColor: "rgba(10, 25, 47, 0.85)",
+        height: "70px",
         boxShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
       });
     } else {
       setHeaderStyle({
-        height: "70px",
         transform: "translateY(0px)",
-        backgroundColor: "rgba(10, 25, 47, 0.85)",
+        height: "70px",
         boxShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
       });
     }
@@ -44,11 +42,18 @@ export default function Header() {
     scrollRef.current = currentScrollY;
   };
 
-  useEffect(() => watchScroll(handleScroll), []);
+  useEffect(() => {
+    const cleanup = watchScroll(handleScroll);
+    return cleanup;
+  }, []);
 
   const style = useStyles();
   return (
-    <Box component="header" sx={{ ...style.header, ...headerStyle }}>
+    <Box
+      component="header"
+      data-testid="header"
+      sx={{ ...style.header, ...headerStyle }}
+    >
       <Logo sx={style.logo} />
       <NavBar>
         <NavBar.Item>{t("about")}</NavBar.Item>
