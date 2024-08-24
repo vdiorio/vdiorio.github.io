@@ -32,12 +32,18 @@ h6 {
 
 ul,
 ol {
+  counter-reset: item;
   list-style: none;
 }
+
+ol li {
+  list-style: none;
+}
+
 ol li::before {
+  counter-increment: item;
   display: inline-block;
   content: "0" counter(item) ".";
-  margin-right: 5px;
   color: #64ffda;
   text-align: right;
 }
@@ -51,4 +57,13 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+svg {
+  transition: all 0.2s ease-in-out;
+}
+
+svg:hover {
+  filter: drop-shadow(3px 3px 0 0 #64ffda);
+  transform: translate(-4px, -4px);
 }

@@ -12,6 +12,11 @@ export const useStyles = () => {
         boxShadow: `3px 3px 0 0 ${theme.palette.primary.main}`,
         transform: `translate(-4px, -4px)`,
       },
+      "&:active": {
+        boxShadow: "none",
+        transform: `translate(0px, 0px)`,
+        transition: "all 0.05s ease-in-out",
+      },
     },
   };
 };
