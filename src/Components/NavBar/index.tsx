@@ -1,4 +1,4 @@
-import { Box, BoxProps } from "@mui/material";
+import { Box, BoxProps, Link, LinkProps } from "@mui/material";
 import { useStyles } from "./styles";
 
 interface CustomBoxProps extends BoxProps {
@@ -21,16 +21,16 @@ export default function NavBar({ olProps = {}, ...props }: Props) {
 }
 
 interface ItemProps extends CustomBoxProps {
-  linkProps?: CustomBoxProps;
+  linkProps?: LinkProps;
 }
 
 function Item({ linkProps = {}, ...props }: ItemProps) {
   const style = useStyles();
   return (
     <Box component="li" sx={{ cursor: "pointer" }} {...props}>
-      <Box component="a" sx={style.link} {...linkProps}>
+      <Link component="a" sx={style.link} {...linkProps}>
         {props.children}
-      </Box>
+      </Link>
     </Box>
   );
 }

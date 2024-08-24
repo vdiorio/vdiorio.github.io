@@ -10,6 +10,7 @@ export const useStyles = () => {
     },
     link: {
       textDecoration: "none",
+      color: theme.palette.text.secondary,
       "&:hover": {
         color: theme.palette.primary.main,
       },

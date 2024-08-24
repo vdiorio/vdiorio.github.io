@@ -30,12 +30,14 @@ export default function Header() {
         transform: "translateY(-70px)",
         height: "70px",
         boxShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
+        backdropFilter: "blur(10px)",
       });
     } else {
       setHeaderStyle({
         transform: "translateY(0px)",
         height: "70px",
         boxShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
+        backdropFilter: "blur(10px)",
       });
     }
 
@@ -56,10 +58,14 @@ export default function Header() {
     >
       <Logo sx={style.logo} />
       <NavBar>
-        <NavBar.Item>{t("about")}</NavBar.Item>
-        <NavBar.Item>{t("experience")}</NavBar.Item>
-        <NavBar.Item>{t("work")}</NavBar.Item>
-        <NavBar.Item>{t("contact")}</NavBar.Item>
+        <NavBar.Item linkProps={{ href: "#about" }}>{t("about")}</NavBar.Item>
+        <NavBar.Item linkProps={{ href: "#experience" }}>
+          {t("experience")}
+        </NavBar.Item>
+        <NavBar.Item linkProps={{ href: "#work" }}>{t("work")}</NavBar.Item>
+        <NavBar.Item linkProps={{ href: "#contact" }}>
+          {t("contact")}
+        </NavBar.Item>
         <Button component="a">{t("resume")}</Button>
       </NavBar>
     </Box>

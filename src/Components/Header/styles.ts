@@ -12,6 +12,7 @@ export const useStyles = () => {
       width: "100%",
       height: "100px",
       transition: "all 0.2s ease-in-out",
+      zIndex: 10,
     },
     logo: {
       color: theme.palette.primary.main,
