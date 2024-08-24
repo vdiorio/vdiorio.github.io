@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
-import Body from "../../../Components/ui/Body";
+import Body from "../../../../Components/ui/Body";
 import { useTranslation } from "react-i18next";
 import { useStyles } from "./styles";
-import Heading from "../../../Components/ui/Heading";
-import Button from "../../../Components/ui/Button";
+import Heading from "../../../../Components/ui/Heading";
+import Button from "../../../../Components/ui/Button";
 
 export default function Hero() {
   const { t } = useTranslation();

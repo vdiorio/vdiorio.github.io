@@ -7,5 +7,7 @@
   "hero-greeting": "Hi, my name is",
   "hero-subtitle": "I build web apps",
   "hero-description": "I am a web developer specializing in creating functional web applications that provide seamless user experiences. I leverage modern frameworks to build responsive websites and optimize performance, blending creativity with technology to deliver tailored solutions.",
-  "hero-button": "Check out my ..."
+  "hero-button": "Check out my ...",
+  "about-title": "About me",
+  "about-description": "With over 5 years of experience in industrial maintenance and systems analysis, I have honed strong problem-solving skills that are both efficient and effective. Recently, I completed a comprehensive web development course at Trybe, where I gained a solid foundation in both Front-End and Back-End development.\nAs a self-taught professional, my journey has been marked by a relentless pursuit of knowledge. Through independent study, I have explored a wide array of resources, courses, and practical projects, building a robust programming foundation. This approach has equipped me with relevant technical skills and keeps me at the forefront of technological trends. My innate curiosity and passion for learning drive me to continuously seek new challenges and opportunities for growth.\nI am deeply passionate about technology and always eager to learn new things. My current technical skills include:\n"
 }
